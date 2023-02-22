@@ -6,8 +6,15 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
 
   #Wishlists
-  get "/wishlists" => "wishlists#index"
-  get "/wishlists/:id" => "wishlists#show"
-  post "/wishlists" => "wishlists#create"
-  delete "/wishlists/:id" => "wishlists#destroy"
+  get "/wishlist" => "wishlists#index"
+  get "/wishlist/:id" => "wishlists#show"
+  post "/wishlist" => "wishlists#create"
+  delete "/wishlist/:id" => "wishlists#destroy"
+  
+  #Libraries
+  get "/library" => "libraries#index"
+  get "/library/:id" => "libraries#show"
+  post "/library" => "libraries#create"
+  delete "/library/:id" => "libraries#destroy"
+
 end
